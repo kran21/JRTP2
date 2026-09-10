@@ -40,7 +40,7 @@ public class DataLoader implements ApplicationRunner{
 		
 		CitizenPlan c3=new CitizenPlan();
 		c3.setCitizenName("Alena");
-		c3.setGender("Fe-Male");
+		c3.setGender("FeMale");
 		c3.setPlanName("cash");
 		c3.setPlanStatus("Terminated");
 		c3.setPlanStartDate(LocalDate.now().minusMonths(4));
@@ -69,7 +69,7 @@ public class DataLoader implements ApplicationRunner{
 				
 				CitizenPlan c6=new CitizenPlan();
 				c6.setCitizenName("Cathy");
-				c6.setGender("Fe-Male");
+				c6.setGender("FeMale");
 				c6.setPlanName("Food");
 				c6.setPlanStatus("Terminated");
 				c6.setPlanStartDate(LocalDate.now().minusMonths(4));
@@ -98,11 +98,11 @@ public class DataLoader implements ApplicationRunner{
 				
 				CitizenPlan c9=new CitizenPlan();
 				c9.setCitizenName("Neel");
-				c9.setGender("Fe-Male");
+				c9.setGender("FeMale");
 				c9.setPlanName("Medical");
 				c9.setPlanStatus("Terminated");
 				c9.setPlanStartDate(LocalDate.now().minusMonths(4));
-				c9.setPlanEndDate(LocalDate.now().plusMonths(6));
+				c9.setPlanEndDate(LocalDate.now().plusMonths(8));
 				c9.setBenefitAmount(5000.00);
 				c9.setTerminateDate(LocalDate.now());
 				c9.setTerminationReason("Govt Job");
@@ -126,11 +126,11 @@ public class DataLoader implements ApplicationRunner{
 				
 				CitizenPlan c12=new CitizenPlan();
 				c12.setCitizenName("Irina");
-				c12.setGender("Fe-Male");
+				c12.setGender("FeMale");
 				c12.setPlanName("Employment");
 				c12.setPlanStatus("Terminated");
 				c12.setPlanStartDate(LocalDate.now().minusMonths(4));
-				c12.setPlanEndDate(LocalDate.now().plusMonths(6));
+				c12.setPlanEndDate(LocalDate.now().plusMonths(8));
 				c12.setBenefitAmount(5000.00);
 				c12.setTerminateDate(LocalDate.now());
 				c12.setTerminationReason("Govt Job");
