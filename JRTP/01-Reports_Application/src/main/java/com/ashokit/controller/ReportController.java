@@ -27,7 +27,12 @@ public class ReportController {
 		init(model);
 		return "index";
 	}
-	
+
+	/**
+	 * This method is used to load index page
+	 * @param model
+	 * @return String
+	 */
 	@GetMapping("/")
 	public String indexPage(Model model) {
 		model.addAttribute("search",new SearchRequest());
