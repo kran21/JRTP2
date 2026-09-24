@@ -5,6 +5,8 @@ import com.ashokit.request.SearchRequest;
 
 import java.util.List;
 
+import jakarta.servlet.http.HttpServletResponse;
+import org.apache.catalina.filters.ExpiresFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,6 +20,24 @@ import com.ashokit.service.ReportService;
 public class ReportController {
 	@Autowired
 	private ReportService service;
+
+	@GetMapping("/excel")
+	public void excelExport(HttpServletResponse response) throws Exception{
+		response.setContentType("application/octet-stream");
+
+		response.addHeader("content-Disposition","attachment;filename=plans.xls");
+
+        service.exportExcel(response);
+	}
+
+	@GetMapping("/pdf")
+	public void pdfExport(HttpServletResponse response) throws Exception{
+		response.setContentType("application/pdf");
+
+		response.addHeader("content-Disposition","attachment;filename=plans.pdf");
+
+		service.exportPdf(response);
+	}
 	
 	@PostMapping("/search")
 	public String handleSearchRequest(@ModelAttribute("search")    SearchRequest request, Model model) {

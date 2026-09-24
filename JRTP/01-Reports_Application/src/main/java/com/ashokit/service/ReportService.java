@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.ashokit.entity.CitizenPlan;
 import com.ashokit.request.SearchRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 public interface ReportService {
 	public List<String> getPlanName();
@@ -12,8 +13,8 @@ public interface ReportService {
 	
 	public List<CitizenPlan> search(SearchRequest request);
 	
-	public boolean exportExcel();
+	public boolean exportExcel(HttpServletResponse response) throws Exception;
 	
-	public boolean exportPdf();
+	public boolean exportPdf(HttpServletResponse response)  throws Exception ;
 
 }

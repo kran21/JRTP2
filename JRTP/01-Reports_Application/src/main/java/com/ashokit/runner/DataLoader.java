@@ -23,7 +23,7 @@ public class DataLoader implements ApplicationRunner{
 		repo.deleteAll();
 		// Citizen Plan
 		CitizenPlan c1=new CitizenPlan();
-		c1.setCitizenName("John");
+		c1.setCitizenName("john");
 		c1.setGender("Male");
 		c1.setPlanName("cash");
 		c1.setPlanStatus("Approved");

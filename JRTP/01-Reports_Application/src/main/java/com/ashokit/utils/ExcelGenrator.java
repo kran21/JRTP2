@@ -1,5 +1,6 @@
 package com.ashokit.utils;
 
-public class Excelgenrator {
+public class ExcelGenrator {
+
 
 }
